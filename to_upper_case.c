@@ -11,7 +11,6 @@ int main(void)
     
     // Change characters to upper case
     toUpperCase(s);
-    
 }
 
 void toUpperCase(string s)
