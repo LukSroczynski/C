@@ -1,0 +1,27 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+void swap(int *a, int *b);
+
+int main(void)
+{
+    int x = 1;
+    int y = 2; 
+    
+    printf("x=%i\n", x);
+    printf("y=%i\n", y);
+    
+    swap(&x, &y);
+    
+    printf("Swapped: x=%i\n", x);
+    printf("Swapped: y=%i\n", y);
+}
+
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
